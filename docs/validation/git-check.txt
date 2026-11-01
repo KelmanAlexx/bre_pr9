@@ -1,0 +1,11 @@
+Проверка фильтрации Git (вариант 8)
+
+Тестовый файл: src/FitnessSpa.UI/bin/Debug/test.dll
+Ожидаемый результат: файл не отображается в обычном `git status` как Untracked.
+
+Проверка выполняется командами:
+  git status --short
+  git check-ignore -v src/FitnessSpa.UI/bin/Debug/test.dll
+  git status --short --ignored
+
+После проверки временный тестовый каталог удаляется.
