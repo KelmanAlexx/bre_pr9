@@ -1,0 +1,42 @@
+# Артефакты сборки .NET (на любой глубине каталога)
+[Bb]in/
+[Oo]bj/
+
+# IDE и локальные настройки разработчика
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Результаты тестирования и анализа покрытия
+TestResults/
+coverage/
+
+# Временные файлы и журналы
+*.log
+*.tmp
+*.temp
+*.cache
+
+# Локальные базы данных и журналы транзакций
+*.mdf
+*.ldf
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db
+
+# Секреты и локальные конфигурации
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.Local.json
+
+# Файлы операционных систем
+.DS_Store
+Thumbs.db
+desktop.ini
