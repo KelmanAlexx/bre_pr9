@@ -1,0 +1,24 @@
+# Автоматическое распознавание текстовых файлов и нормализация окончаний строк
+* text=auto
+
+# Основные текстовые форматы
+*.cs text diff=csharp
+*.sql text
+*.json text
+*.md text
+
+# Бинарные форматы
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.dll binary
+*.exe binary
+*.pdb binary
+
+# Крупные архивы и резервные копии - хранение через Git LFS
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.bak filter=lfs diff=lfs merge=lfs -text
+*.dump filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
